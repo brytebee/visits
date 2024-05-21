@@ -4,7 +4,7 @@ const redis = require("redis");
 const app = express();
 const client = redis.createClient({
   host: "redis-server",
-  // port: 6379,
+  // port: 6379, // This is the default value
 });
 client.set("visits", 0);
 
